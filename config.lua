@@ -13,7 +13,8 @@ Config.ItemDropObject = `prop_nigel_bag_pickup` -- if Config.UseItemDrop is true
 Config.VendingObjects = {
     "prop_vend_soda_01",
     "prop_vend_soda_02",
-    "prop_vend_water_01"
+    "prop_vend_water_01",
+    "twerks_candy"
 }
 
 Config.BinObjects = {
@@ -38,6 +39,14 @@ Config.VendingItem = {
         info = {},
         type = "item",
         slot = 2,
+    },
+    [3] = {
+        name = "twerks_candy",
+        price = 4,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 3,
     },
 }
 
