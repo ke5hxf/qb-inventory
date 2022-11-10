@@ -441,6 +441,25 @@ function FormatItemInfo(itemData) {
                 itemData.info.citizenid +
                 "</span></p>"
             );
+        } else if (itemData.name == "huntinglicence") {
+            var gender = "Man";
+            if (itemData.info.gender == 1) {
+                gender = "Woman";
+            }
+            $(".item-info-title").html("<p>" + itemData.label + "</p>");
+            $(".item-info-description").html(
+                "<p><strong>CSN: </strong><span>" +
+                itemData.info.citizenid +
+                "</span></p><p><strong>First Name: </strong><span>" +
+                itemData.info.firstname +
+                "</span></p><p><strong>Last Name: </strong><span>" +
+                itemData.info.lastname +
+                "</span></p><p><strong>Birth Date: </strong><span>" +
+                itemData.info.birthdate +
+                "</span></p><p><strong>Gender: </strong><span>" +
+                gender +
+                "</span></p>"
+            );
         } else if (itemData.name == "harness") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html(
